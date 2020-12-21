@@ -8,11 +8,11 @@ on:
     branches: [ main ]
   
 jobs:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
 
-      - name: Set Secrets
+    - name: Set Secrets
         run: echo Hello, ${{ secrets.COUNTER }}!
 
      
