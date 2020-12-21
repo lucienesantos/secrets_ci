@@ -5,11 +5,12 @@ on:
     branches: [ main ]
   
 jobs:
-  runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-  steps:
-    - uses: actions/checkout@v2
-    - name: Set Secrets
-      run: echo Hello, ${{ secrets.COUNTER }}!
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Secrets
+        run: echo Hello, ${{ secrets.COUNTER }}!
 
      
