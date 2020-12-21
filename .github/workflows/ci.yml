@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set Secrets
-        run: echo Hello, ${{ secrets.COUNTER }}!
+        run: echo Hello, ${{ secrets.COUNTER_2 }}!
 
      
